@@ -82,3 +82,65 @@ quadrado = [numero ** 2 for numero in numeros]
 print("Quadrados:", quadrado)
 
 #####Métodos  da classe list
+
+    # {}.append 
+    
+lista = ["Python"]
+lista.append([1]) 
+print(lista) #>>>1
+
+    #[].clear
+lista = [1, "pYTHON"]
+lista.clear()
+print(lista) #>>>[]
+
+    #[].copy
+lista = [1, 2, 3]
+l2 = lista.copy()
+print(id(l2), id(lista)) #>>>1894758673472 1894762115520
+
+    #[].count
+cores = ["vermelho", "verde", "amarelo"]
+print(cores.count("vermelho")) #>>>1
+
+    #[].extend
+linguagens = ["py", "js", "c"]
+linguagens.extend(["JAVA", "CS"])
+print(linguagens) #>>>['py', 'js', 'c', 'JAVA', 'CS']
+
+    #[].index
+linguagens = ["py", "js", "c", "js"]
+print(linguagens.index("js")) #>>>1
+
+    #[].pop
+linguagens = ["py", "js", "c", "js"]
+print(linguagens.pop()) #>>>js
+print(linguagens.pop()) #>>>c
+print(linguagens.pop()) #>>>js
+
+    #[].reverse
+linguagens = ["py", "js", "c", "js"]
+print(linguagens.reverse)
+
+    #[].remove
+linguagens = ["py", "js", "c", "js"]
+linguagens.remove("c")
+print(linguagens) #>>>['py', 'js', 'js']
+
+    #[].sort
+linguagens = ["py", "js", "c", "js"]
+linguagens.sort()
+print(linguagens) #>>>['c', 'js', 'js', 'py']
+
+linguagens.sort(reverse=True)
+print(linguagens) #>>>['py', 'js', 'js', 'c']
+
+linguagens.sort(key=lambda x: len(x), reverse=True)
+print(linguagens) #>>>['py', 'js', 'js', 'c']
+
+linguagens.sort(key=lambda x: len(x))
+print(linguagens) #>>>['c', 'py', 'js', 'js']
+
+    #len
+linguagens = ["py", "js", "c", "js"]
+print(len(linguagens)) #>>>4
