@@ -47,12 +47,12 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
     return saldo, extrato, numero_saques
 
 def exibir_extrato(saldo, *, extrato):
-    print("\n================ EXTRATO ================")
+    print("\n====== EXTRATO ==========")
     print("Não foram realizadas movimentações." if not extrato else extrato)
     print(f"\nSaldo: R$ {saldo:.2f}")
-    print("==========================================")
+    print("============================")
 
-criar_usuario("Maria Silva", "01/01/1990", "123.456.789-00", "Rua A, 123 - Bairro X - Cidade/UF")
+criar_usuario("Lívia Afonso", "04/07/1994", "123.456.789-00", "Rua Sete, 123 - Bairro Office - Vitória/ES")
 criar_conta_corrente("12345678900")
 
 saldo = 0
