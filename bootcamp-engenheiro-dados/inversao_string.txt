@@ -1,0 +1,10 @@
+- Inversão de uma string sem usar funções prontas
+
+def inverter_string(texto):
+    invertida = ""
+    for char in texto:
+        invertida = char + invertida
+    return invertida
+
+texto = input("Digite uma string para inverter: ")
+print("String invertida:", inverter_string(texto))
